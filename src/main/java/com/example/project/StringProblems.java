@@ -8,7 +8,9 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-            //implement code here
+        if (x.indexOf("ly") != -1) {
+            return true;
+        }
         return false;
     }
 
@@ -20,18 +22,20 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        //implement code here
-        return "";
+        if (s1.indexOf(s2.substring(0,1)) != -1) {
+            String tempstr = s2.substring(1);
+            return s1 + tempstr;
+        }
+        return s1 + s2;
     }
 
     // Given a string, return a version without the first 2 chars. 
-    // Except keep the first char if it is 'a' and keep the second char if it is 'b'. 
     // The string may be any length. Harder than it looks.
     // deFront("Hello") → "llo"
     // deFront("java") → "va"
     // deFront("away") → "aay"
     public String deFont(String s1){
-        //implement code here
+        s1 = s1.substring(2);
         return "";
     }
 
@@ -43,6 +47,9 @@ public class StringProblems{
     // withoutX("xHi") → "Hi"
     // withoutX("Hxix") → "Hxi"
     public String withoutX(String s1){
+        if (s1.indexOf("x") != -1) {
+            
+        }
         return "";
     }
 
