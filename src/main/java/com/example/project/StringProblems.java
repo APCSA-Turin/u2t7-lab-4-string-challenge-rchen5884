@@ -39,8 +39,16 @@ public class StringProblems{
     // deFront("abee") -> "abee"
     // deFront("xbring") -> "bring"
     public String deFont(String s1){
-        if (s1.substring(0,1))
-        return "";
+        String firstletter = s1.substring(0,1);
+        String secondletter = s1.substring(1,2);
+        String tempString = s1.substring(2);
+        if (secondletter.substring("b")!= -1) {
+            tempString = "b" + tempString;
+        }
+        if (firstletter.substring("a") != -1) {
+            tempString = "a" + tempString;
+        }
+        return tempString;
     }
 
     
@@ -51,7 +59,10 @@ public class StringProblems{
     // withoutX("xHi") → "Hi"
     // withoutX("Hxix") → "Hxi"
     public String withoutX(String s1){
-        if (s1.indexOf("x") != -1) {
+        int num = s1.length();
+        String firstletter = s1.substring(0,1);
+        String lastletter = s1.substring(num);
+        if (firstletter == "x") {
             
         }
         return "";
