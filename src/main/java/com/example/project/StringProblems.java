@@ -30,12 +30,16 @@ public class StringProblems{
     }
 
     // Given a string, return a version without the first 2 chars. 
+    // Except keep the first char if it is 'a' and keep the second char if it is 'b'. 
     // The string may be any length. Harder than it looks.
     // deFront("Hello") → "llo"
     // deFront("java") → "va"
     // deFront("away") → "aay"
+    // deFront("aapple") -> "apple"
+    // deFront("abee") -> "abee"
+    // deFront("xbring") -> "bring"
     public String deFont(String s1){
-        s1 = s1.substring(2);
+        if (s1.substring(0,1))
         return "";
     }
 
